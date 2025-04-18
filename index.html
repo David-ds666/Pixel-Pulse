@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Configuration -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Pulse</title>
+
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a2d9d6f0e4.js" crossorigin="anonymous"></script>
+  
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="style/main.css" />
+
+  <!-- Font Awesome (for social icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style/main.css" />
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js" defer></script>
+
+  <!-- Google Font: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+
+  <!-- =================== Header Section =================== -->
+  <header class="sticky-header">
+    <div class="logo">
+      <!-- Logo image and site title -->
+      <img src="assets/images/pixelpulse-logo.png" alt="Pixel Pulse Logo" class="logo-img" />
+      <span class="logo-text">Pixel Pulse</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+     
+     <!-- Search Icon Button -->
+<!-- ✅ Working Search Icon Button -->
+<button class="nav-link search-icon" id="searchBtn">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" aria-hidden="true">
+    <path d="M500.3 471.7l-129.9-129.9c28.4-34.5 45.6-78.5 45.6-126.8C416 98.8 324.2 7 208 7S0 98.8 0 215s91.8 208 208 208c48.3 0 92.3-17.2 126.8-45.6l129.9 129.9c9.4 9.4 24.6 9.4 33.9 0l1.7-1.7c9.4-9.4 9.4-24.6 0-33.9zM208 368c-84.1 0-152-67.9-152-152S123.9 64 208 64s152 67.9 152 152-67.9 152-152 152z"/>
+  </svg>
+</button>
+      
+      <!-- Navigation links -->
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="community.html" class="nav-link">Community</a> <!-- New Community Button -->
+
+
+      <!-- Login button -->
+      <button id="login-btn" class="nav-link">Login</button>
+
+      <!-- Theme toggle button -->
+      <button id="theme-toggle" class="theme-btn">
+        <span id="theme-icon">🌙</span> <!-- Moon/Sun icon changes based on theme -->
+      </button>
+    </nav>
+  </header>
+
+
+
+
+
+  <!-- =================== Search Bar (Hidden by Default) =================== -->
+<div class="search-bar hidden" id="searchBar">
+  <input type="text" placeholder="Search articles, reviews..." />
+  <button id="closeSearch" class="close-search">&times;</button>
+</div>
+
+
+
+
+
+  <!-- =================== Hero Section =================== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Pixel Pulse</h1>
+      <p>Your source for tech news, product reviews, and community ratings.</p>
+    </div>
+  </section>
+
+
+
+
+  <!-- =================== News/Product Grid Section =================== -->
+  <section class="news-grid">
+    <!-- Product Card 1 -->
+    <div class="card">
+      <img src="assets/images/product1.jpg" class="product-img" alt="Product Image" />
+      <div class="card-content">
+        <h2>New M3 Lineup</h2>
+        <p>CUPERTINO, CALIFORNIA Apple today announced M3, M3 Pro, and M3 Max, three chips....</p>
+        <a href="news1.html" class="more-info">More Info</a>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="card">
+      <img src="assets/images/product2.jpg" class="product-img" alt="Product Image" />
+      <div class="card-content">
+        <h2>Samsung S26 Leakes</h2>
+        <p>The Samsung Galaxy S26 has broken cover at last, so we can finally take a good look at ...</p>
+        <a href="news2.html" class="more-info">More Info</a>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+<div class="card">
+  <img src="assets/images/product3.jpg" class="product-img" alt="Product Image" />
+  <div class="card-content">
+    <h2>Nintendo Switch 2 launches</h2>
+    <p>All Together, Anytime, Anywhere. With new ways to play and new ways to connect players, the Nintendo Switch 2..</p>
+    <a href="news3.html" class="more-info">More Info</a>
+  </div>
+</div>
+
+  <!-- Product Card 4 -->
+  <div class="card">
+    <img src="assets/images/product4.jpg" class="product-img" alt="Product Image" />
+    <div class="card-content">
+      <h2>Meta’s benchmarks for its new AI </h2>
+      <p>One of the new flagship AI models Meta released on Saturday, Maverick, ranks second on LM Arena, a test...</p>
+      <a href="news4.html" class="more-info">More Info</a>
+    </div>
+  </div>
+
+   <!-- Product Card 5 -->
+   <div class="card">
+    <img src="assets/images/product5.jpg" class="product-img" alt="Product Image" />
+    <div class="card-content">
+      <h2>GTA VI Leakes </h2>
+      <p>Grand Theft Auto VI’s price has seemingly leaked online and if you found yourself outraged by the recent reveal of the...</p>
+      <a href="news5.html" class="more-info">More Info</a>
+    </div>
+  </div>
+
+   <!-- Product Card 6 -->
+   <div class="card">
+    <img src="assets/images/product6.jpg" class="product-img" alt="Product Image" />
+    <div class="card-content">
+      <h2>China's flying taxis </h2>
+      <p>Flying taxis will become a viable method of transportation in China in the next three to five years...</p>
+      <a href="news6.html" class="more-info">More Info</a>
+    </div>
+  </div>
+
+    <!-- Product Card 7 -->
+    <div class="card">
+      <img src="assets/images/product7.jpg" class="product-img" alt="Product Image" />
+      <div class="card-content">
+        <h2>US TikTok Ban </h2>
+        <p>FA potential TikTok ban is on the horizon as the United States Supreme Court considers an important decision ...</p>
+        <a href="news7.html" class="more-info">More Info</a>
+      </div>
+    </div>
+
+     <!-- Product Card 8 -->
+     <div class="card">
+      <img src="assets/images/product8.jpg" class="product-img" alt="Product Image" />
+      <div class="card-content">
+        <h2>Apple’s AI isn’t a letdown </h2>
+        <p>Apple has been getting hammered in tech and financial media for its uncharacteristically messy foray ...</p>
+        <a href="news8.html" class="more-info">More Info</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Trending News Row -->
+<section class="trending-news">
+  <div class="trending-card">
+    <p class="category">SECURITY ROUNDUP</p>
+    <h3 class="headline">NSA Chief Ousted Amid Trump Loyalty Firing Spree</h3>
+    <img src="assets/images/trending1.webp" alt="NSA News">
+  </div>
+  <div class="trending-card">
+    <p class="category">TAKEOVER</p>
+    <h3 class="headline">Inside DOGE’s AI Push at the Department of Veterans Affairs</h3>
+    <img src="assets/images/trending2.webp" alt="VA Department">
+  </div>
+  <div class="trending-card">
+    <p class="category">MADE IN USA</p>
+    <h3 class="headline">Trump and DOGE Defund Program That Boosted American Manufacturing</h3>
+    <img src="assets/images/trending3.webp" alt="Manufacturing">
+  </div>
+  <div class="trending-card">
+    <p class="category">TAKEOVER</p>
+    <h3 class="headline">Federal Judge Allows DOGE to Take Over $500M Office Building</h3>
+    <img src="assets/images/trending4.webp" alt="Office Building">
+  </div>
+</section>
+
+
+
+
+  <!-- =================== For You Section =================== -->
+
+  <section class="for-you-section">
+    <h2>For You</h2>
+    <p class="for-you-sub">Recommended based on your interests</p>
+  
+    <div class="for-you-card">
+      <div class="news-grid">
+        <!-- News Item 1 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou1.webp" alt="News 1">
+          <div class="news-info">
+            <h4>One UI 7 rolling out in more markets</h4>
+            <p>SamMobile • 11 hours ago</p>
+          </div>
+        </div>
+  
+        <!-- News Item 2 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou2.webp" alt="News 2">
+          <div class="news-info">
+            <h4>Ripple CEO Asks IMF About XRP</h4>
+            <p>The Crypto Times • Yesterday</p>
+          </div>
+        </div>
+  
+        <!-- News Item 3 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou3.webp" alt="News 3">
+          <div class="news-info">
+            <h4>NEET 2025 Major Changes Announced</h4>
+            <p>India Today • 2 days ago</p>
+          </div>
+        </div>
+  
+        <!-- News Item 4 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou4.webp" alt="News 4">
+          <div class="news-info">
+            <h4>Cartoon Today on April 10, 2025</h4>
+            <p>Telangana Today • 5 hours ago</p>
+          </div>
+        </div>
+  
+        <!-- News Item 5 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou5.jpg" alt="News 5">
+          <div class="news-info">
+            <h4>Instagram's Long-Awaited Update</h4>
+            <p>Hindustan Times • 10 hours ago</p>
+          </div>
+        </div>
+  
+        <!-- News Item 6 -->
+        <div class="news-entry">
+          <img src="assets/Images/foryou6.webp" alt="News 6">
+          <div class="news-info">
+            <h4>ChatGPT Shocks With AI Answer</h4>
+            <p>Mint • Yesterday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- =================== Reviews Section (Initially Hidden) =================== -->
+  <section id="reviews" class="reviews-section hidden">
+    <h2>Product Reviews</h2>
+    <div class="review-grid">
+      <!-- Review Card 1 -->
+      <div class="review-card">
+        <img src="assets/images/review1.jpg" class="review-img" alt="Product Image" />
+        <div class="review-info">
+          <h3>Wireless Gaming Mouse</h3>
+          <p>The mouse offers outstanding responsiveness paired with exceptional ergonomics, making it an ideal companion for extended use.</p>
+          <div class="stars">⭐⭐⭐⭐☆</div>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="review-card">
+        <img src="assets/images/review2.jpg" class="review-img" alt="Product Image" />
+        <div class="review-info">
+          <h3>Mechanical Keyboard V3</h3>
+          <p>Built to last, this keyboard boasts exceptional durability, with high-quality switches rated for millions of keystrokes and a solid frame that resists flex over time.</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+       <!-- Review Card 3 -->
+       <div class="review-card">
+        <img src="assets/images/review3.jpg" class="review-img" alt="Product Image" />
+        <div class="review-info">
+          <h3>Odyssey OLED Gaming Monitor</h3>
+          <p>The world’s first 27-inch 4K OLED gaming monitor, featuring a 240Hz refresh rate and 0.03ms response time. Its high pixel density of 165 PPI delivers exceptional detail and picture quality.</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+       <!-- Review Card 4 -->
+       <div class="review-card">
+        <img src="assets/images/review4.jpg" class="review-img" alt="Product Image" />
+        <div class="review-info">
+          <h3>boAt Airdopes 141</h3>
+          <p>The boAt Airdopes 141 are a popular choice among budget-friendly true wireless earbuds in India. They offer a range of features that cater to both casual listeners and those with an active lifestyle..</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+       <!-- Review Card 5 -->
+       <div class="review-card">
+        <img src="assets/images/review5.jpg" class="review-img" alt="Product Image" />
+        <div class="review-info">
+          <h3>Meta Quest 3</h3>
+          <p>The Meta Quest 3 offers a new level of immersion, making it a standout gift choice for mixed-reality gaming enthusiasts .</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- =================== Login Modal =================== -->
+  <div id="login-popup" class="login-popup hidden">
+    <div class="login-box">
+      <!-- Close button for login popup -->
+      <span class="close-btn" id="close-login">&times;</span>
+      <h2>Login to Pixel Pulse</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+ 
+  
+
+
+
+  <!-- =================== JavaScript =================== -->
+  <script>
+    // =================== Theme Toggle Script ===================
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+
+    // Function to apply light or dark theme
+    function setTheme(mode) {
+      if (mode === "dark") {
+        document.body.classList.add("dark-mode");
+        themeIcon.textContent = "☀️"; 
+      } else {
+        document.body.classList.remove("dark-mode");
+        themeIcon.textContent = "🌙"; 
+      }
+    }
+
+    // Load previously saved theme from local storage
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+
+    // Toggle theme on button click
+    themeToggle.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark-mode");
+      themeIcon.textContent = isDark ? "☀️" : "🌙";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+
+
+
+
+
+
+    // =================== Login Popup Script ===================
+    document.getElementById("login-btn").addEventListener("click", () => {
+      // Show the login modal
+      document.getElementById("login-popup").classList.remove("hidden");
+    });
+
+    document.getElementById("close-login").addEventListener("click", () => {
+      // Hide the login modal
+      document.getElementById("login-popup").classList.add("hidden");
+    });
+
+
+
+
+
+    // =================== Search Toggle Script ===================
+const searchBtn = document.getElementById('searchBtn');
+const searchBar = document.getElementById('searchBar');
+const closeSearch = document.getElementById('closeSearch');
+
+searchBtn.addEventListener('click', () => {
+  searchBar.classList.remove('hidden');
+});
+
+closeSearch.addEventListener('click', () => {
+  searchBar.classList.add('hidden');
+});
+
+
+
+
+
+    // =================== Show Reviews Section on Navigation Click ===================
+    document.querySelector('.nav-link[href="#reviews"]').addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+
+      const reviewSection = document.getElementById('reviews');
+      reviewSection.classList.remove('hidden'); 
+      reviewSection.scrollIntoView({ behavior: 'smooth' }); 
+    });
+  </script>
+
+
+
+
+
+  <!-- =================== Footer Section =================== -->
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Pixel Pulse</h3>
+      <p>Your daily source for the latest in tech news, product reviews, and innovations.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: pixelpulse@example.com</p>
+      <p>Phone: +91 12345 67890</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Pixel Pulse. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

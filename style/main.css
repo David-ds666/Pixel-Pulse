@@ -1,0 +1,746 @@
+/* ========== BASE STYLES ========== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+
+
+
+/* ========== DARK MODE STYLES ========== */
+.dark-mode {
+    background-color: #0e0e0e;
+    color: #eaeaea; 
+}
+
+
+/* Dark theme override for header */
+.dark-mode .sticky-header {
+    background: #1a1a1a;
+}
+
+
+/* Dark theme card, review, and login box background */
+.dark-mode .card,
+.dark-mode .review-card,
+.dark-mode .login-box {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+}
+
+.dark-mode .card-content p {
+    color: #bbbbbb; 
+}
+
+
+/* Dark mode 'More Info' button */
+.dark-mode .more-info {
+    background-color: #1e1d1e;
+    color: #fff;
+}
+
+
+
+/* Apply Poppins font */
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+/* ========== HEADER / NAVIGATION ========== */
+.sticky-header {
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    background: #fff;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link, .theme-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-icon {
+    font-size: 1rem;
+    color: #555;
+    margin-right: -0.3rem;
+}
+
+/* Search Icon Button */
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+
+  /* ========== Community Section ========== */
+#community {
+  padding: 40px;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+}
+
+.community-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.post-box {
+  margin: 20px 0;
+}
+
+.post-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.post-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.community-post {
+  text-align: left;
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.post-actions button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+  
+  /* Search Bar Overlay */
+  .search-bar {
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 1500;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+    outline: none;
+  }
+  
+  .close-search {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Dark Mode Support */
+  .dark-mode .search-bar {
+    background: #1e1e1e;
+    color: #eaeaea;
+  }
+  
+  .dark-mode .search-bar input {
+    background-color: #2c2c2c;
+    border-color: #444;
+    color: #fff;
+  }
+  
+  /* Hidden utility class */
+  .hidden {
+    display: none;
+  }
+
+  /* Smooth pop-out text effect on hover */
+header .nav-link,
+header .theme-btn,
+header .search-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500; 
+}
+
+/* Hover effect: text darkens and slightly scales up */
+header .nav-link:hover,
+header .theme-btn:hover,
+header .search-icon:hover {
+  color: #111; 
+  transform: scale(1.05); 
+}
+
+/* Optional for dark mode: lighten on hover */
+body.dark-mode header .nav-link:hover,
+body.dark-mode header .theme-btn:hover,
+body.dark-mode header .search-icon:hover {
+  color: #fff;
+}
+
+
+
+
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  padding: 5rem 4rem;
+  text-align: center;
+  color: #ffffff;
+  background-image: url('../assets/Images/hero.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Optional overlay for better text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(162, 162, 162, 0.4); 
+  z-index: 0;
+}
+
+/* Put hero text above the image/overlay */
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.dark-mode .hero {
+  background-image: url('../assets/Images/hero.jpg'); 
+  color: #ffffff;
+}
+
+
+
+/* ========== PRODUCT NEWS GRID ========== */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Product Card - Side by Side Layout */
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: stretch;
+    height: 150px; 
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+  
+  /* Image on the left */
+  .product-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+  }
+  
+/* Text on the right */
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Reduce spacing between title and paragraph inside card */
+.card-content h3 {
+    margin: 0 0 0.2rem 0; 
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-content p {
+    margin: 0; 
+    font-size: 0.95rem;
+    color: #555;
+}
+  
+  /* Responsive stack on smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .product-img {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px 12px 0 0;
+    }
+  
+    .card-content {
+      padding: 1rem;
+    }
+  }
+
+/* 'More Info' Text Link */
+.more-info {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0;             
+    background: none;       
+    border-radius: 0;         
+    transition: color 0.2s ease;
+}
+
+.more-info:hover {
+    color: #0056b3; 
+    text-decoration: underline; 
+}
+
+
+
+/* ========== TRENDING NEWS SECTION ========== */
+.trending-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.trending-card {
+  flex: 1 1 22%; /* 4 cards per row */
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover pop-out effect */
+.trending-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styles */
+.trending-card .category {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.trending-card .headline {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.trending-card img {
+  width: 80%;
+  height: 80;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Support light/dark mode */
+body.dark-mode .trending-card .headline,
+body.dark-mode .trending-card .category {
+  color: white;
+}
+
+body.dark-mode .trending-card {
+  background-color: #282626; 
+}
+
+
+
+
+
+/* ========== NEWS DETAIL PAGE ========== */
+
+/* Container for the entire news detail content */
+.news-detail-container {
+    padding: 40px;            
+    max-width: 800px;         
+    margin: auto;            
+  }
+  
+  /* Image at the top of the news article */
+  .news-banner {
+    width: 100%;               
+    border-radius: 12px;       
+    margin-bottom: 20px;        
+  }
+  
+  /* Title of the news article */
+  .news-title {
+    font-size: 2rem;           
+    font-weight: bold;          
+    margin-bottom: 10px;       
+  }
+  
+  /* Date below the title */
+  .news-date {
+    font-size: 0.9rem;          
+    color: #888;               
+    margin-bottom: 20px;       
+  }
+  
+  /* Paragraphs in the news content */
+  .news-content p {
+    line-height: 1.6;           
+    margin-bottom: 16px;      
+  }
+
+
+
+
+  /* ======= FOR YOU SECTION ======= */
+  .for-you-section {
+    padding: 3rem 4rem;
+    background-color: #f5f5f5;
+    color: #111;
+  }
+
+  .dark-mode .for-you-section {
+    background-color: #1e1e1e;
+    color: #eee;
+  }
+
+  .for-you-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .for-you-sub {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .dark-mode .for-you-sub {
+    color: #aaa;
+  }
+
+  /* Card Container */
+  .for-you-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .for-you-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .dark-mode .for-you-card {
+    background-color: #2a2a2a;
+  }
+
+  /* News Grid */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* News Entry */
+  .news-entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .news-entry img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .news-entry img:hover {
+    transform: scale(1.1);
+  }
+
+  .news-info h4 {
+    font-size: 1rem;
+    margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .news-entry:hover img,
+    .news-entry:hover .news-info h4,
+    .news-entry:hover .news-info p {
+    color: #004ea1;
+    transform: scale(1.05);
+    }
+
+    .news-info p {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0.3rem 0 0 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .dark-mode .news-entry:hover .news-info p {
+    color: #fff;
+    }
+
+    .dark-mode .news-info p {
+    color: #ccc;
+    }
+
+
+
+/* ========== REVIEW SECTION ========== */
+.reviews-section {
+  padding: 2rem;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.review-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.review-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1rem; 
+}
+
+
+
+
+
+
+/* ========== LOGIN POPUP ========== */
+.login-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; 
+}
+
+/* Hide element */
+.hidden {
+    display: none;
+}
+
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Close (X) button inside login popup */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+
+
+
+/* ====== Footer Section ====== */
+.site-footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.site-footer h3, 
+.site-footer h4, 
+.site-footer p, 
+.site-footer a {
+  color: white;
+}
+
+.footer-container > div {
+  flex: 1 1 200px;
+}
+
+/* Social Media Icons */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.4rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1da1f2;
+}
+
+/* Bottom Line */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* Dark Mode */
+body.dark-mode .site-footer {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-mode .site-footer a,
+body.dark-mode .site-footer p,
+body.dark-mode .site-footer h3,
+body.dark-mode .site-footer h4 {
+  color: white;
+}
+
+
+
+
