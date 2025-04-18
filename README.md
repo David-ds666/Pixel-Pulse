@@ -1,2 +1,1 @@
 # pixelpulse-technews
-# pixelpulse-technews
